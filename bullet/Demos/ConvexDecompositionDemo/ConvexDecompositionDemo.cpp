@@ -62,6 +62,7 @@ bool MyCompoundChildShapeCallback(const btCollisionShape* pShape0, const btColli
 
 #include "GlutStuff.h"
 
+#include "ConvexDecomposition.h"
 
 btVector3	centroid=btVector3(0,0,0);
 btVector3   convexDecompositionObjectOffset(10,0,0);
@@ -569,7 +570,7 @@ void ConvexDecompositionDemo::initPhysics(const char* filename)
 				delete [] pointsCH;
 				delete [] trianglesCH;
 
-				ConvexResult r(nPoints, vertices, nTriangles, triangles);
+				ConvexDecomposition::ConvexResult r(nPoints, vertices, nTriangles, triangles);
 				convexDecomposition.ConvexDecompResult(r);
 			}
 

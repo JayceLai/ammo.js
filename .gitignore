@@ -1,5 +1,7 @@
 cocos
 bullet/build
+bullet/build-win
+bullet/examples/pybullet
 *.diff
 
 /bullet/CMakeFiles
