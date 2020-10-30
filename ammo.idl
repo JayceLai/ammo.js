@@ -597,6 +597,10 @@ interface btAxisSweep3 {
   void btAxisSweep3([Ref] btVector3 worldAabbMin, [Ref] btVector3 worldAabbMax, optional long maxHandles, optional btOverlappingPairCache pairCache, optional boolean disableRaycastAccelerator);
 };
 
+interface bt32BitAxisSweep3 {
+  void bt32BitAxisSweep3([Ref] btVector3 worldAabbMin, [Ref] btVector3 worldAabbMax, optional long maxHandles, optional btOverlappingPairCache pairCache, optional boolean disableRaycastAccelerator);
+};
+
 interface btBroadphaseInterface {
   btOverlappingPairCache getOverlappingPairCache();
 };
@@ -608,6 +612,11 @@ interface btDbvtBroadphase {
   void btDbvtBroadphase();
 };
 btDbvtBroadphase implements btBroadphaseInterface;
+
+interface btSimpleBroadphase {
+  void btSimpleBroadphase();
+};
+btSimpleBroadphase implements btBroadphaseInterface;
 
 interface btBroadphaseProxy {
   attribute long m_collisionFilterGroup;
