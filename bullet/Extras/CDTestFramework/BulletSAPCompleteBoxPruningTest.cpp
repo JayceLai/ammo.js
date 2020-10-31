@@ -495,7 +495,7 @@ void BulletSAPCompleteBoxPruningTest::Init()
 		btVector3	aabbMax(Center.x+Extents.x,Center.y+Extents.y,Center.z+Extents.z);
 		int shapeType =0;
 		void* userPtr = 0;
-		btBroadphaseProxy* proxy = m_broadphase->createProxy(aabbMin,aabbMax,shapeType,&mBoxes[i],1,1,0,0);//m_dispatcher);
+		btBroadphaseProxy* proxy = m_broadphase->createProxy(aabbMin,aabbMax,shapeType,&mBoxes[i],1,1,0);//m_dispatcher);
 		m_proxies.push_back( proxy );
 
 		mBoxTime[i] = 2000.0f*UnitRandomFloat();

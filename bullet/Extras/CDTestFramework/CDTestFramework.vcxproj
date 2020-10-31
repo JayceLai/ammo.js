@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0565DB39-45CC-416E-B549-BFC24F2666D1}</ProjectGuid>
+    <RootNamespace>CDTestFramework</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28307.799</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Bin\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\Opcode;.\AntTweakBar\include;.\GIMPACT\Include;../../src;../../Glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>./Bin/CDTestFrameworkDEBUG.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\AntTweakBar\lib;../../Glut;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)CDTestFramework.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.\Opcode;.\AntTweakBar\include;.\GIMPACT\Include;../../src;../../Glut;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <OutputFile>./Bin/CDTestFramework.exe</OutputFile>
+      <AdditionalLibraryDirectories>.\AntTweakBar\lib;../../Glut;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AntTweakBar\src\LoadOGL.cpp" />
+    <ClCompile Include="AntTweakBar\src\LoadOGLCore.cpp" />
+    <ClCompile Include="AntTweakBar\src\TwBar.cpp" />
+    <ClCompile Include="AntTweakBar\src\TwColors.cpp" />
+    <ClCompile Include="AntTweakBar\src\TwEventGLUT.c" />
+    <ClCompile Include="AntTweakBar\src\TwFonts.cpp" />
+    <ClCompile Include="AntTweakBar\src\TwMgr.cpp" />
+    <ClCompile Include="AntTweakBar\src\TwOpenGL.cpp" />
+    <ClCompile Include="AntTweakBar\src\TwOpenGLCore.cpp" />
+    <ClCompile Include="AntTweakBar\src\TwPrecomp.cpp" />
+    <ClCompile Include="BipartiteBoxPruning.cpp" />
+    <ClCompile Include="BulletSAPCompleteBoxPruningTest.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CapsuleMeshQuery.cpp" />
+    <ClCompile Include="CDTestFramework.cpp" />
+    <ClCompile Include="CollisionTest.cpp" />
+    <ClCompile Include="CompleteBoxPruning.cpp" />
+    <ClCompile Include="GLFontRenderer.cpp" />
+    <ClCompile Include="IceHelpers.cpp" />
+    <ClCompile Include="OBBMeshQuery.cpp" />
+    <ClCompile Include="OpcodeArraySAPTest.cpp" />
+    <ClCompile Include="RenderingHelpers.cpp" />
+    <ClCompile Include="SphereMeshQuery.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AntTweakBar\src\AntPerfTimer.h" />
+    <ClInclude Include="AntTweakBar\src\LoadOGL.h" />
+    <ClInclude Include="AntTweakBar\src\LoadOGLCore.h" />
+    <ClInclude Include="AntTweakBar\src\TwBar.h" />
+    <ClInclude Include="AntTweakBar\src\TwColors.h" />
+    <ClInclude Include="AntTweakBar\src\TwFonts.h" />
+    <ClInclude Include="AntTweakBar\src\TwGraph.h" />
+    <ClInclude Include="AntTweakBar\src\TwMgr.h" />
+    <ClInclude Include="AntTweakBar\src\TwOpenGL.h" />
+    <ClInclude Include="AntTweakBar\src\TwOpenGLCore.h" />
+    <ClInclude Include="AntTweakBar\src\TwPrecomp.h" />
+    <ClInclude Include="BipartiteBoxPruning.h" />
+    <ClInclude Include="BulletSAPCompleteBoxPruningTest.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CapsuleMeshQuery.h" />
+    <ClInclude Include="CDTestFramework.h" />
+    <ClInclude Include="CollisionTest.h" />
+    <ClInclude Include="CompleteBoxPruning.h" />
+    <ClInclude Include="GLFontData.h" />
+    <ClInclude Include="GLFontRenderer.h" />
+    <ClInclude Include="IceHelpers.h" />
+    <ClInclude Include="OBBMeshQuery.h" />
+    <ClInclude Include="OpcodeArraySAPTest.h" />
+    <ClInclude Include="Profiling.h" />
+    <ClInclude Include="RenderingHelpers.h" />
+    <ClInclude Include="SphereMeshQuery.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Terrain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AntTweakBar\src\AntTweakBar.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CDTestFramework.txt" />
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VTune\CDTestFramework.vpj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\build-win\src\BulletCollision\BulletCollision.vcxproj">
+      <Project>{ec74efa7-b1d2-3427-8a8c-a13d44844ee1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\build-win\src\LinearMath\LinearMath.vcxproj">
+      <Project>{34d43a63-15dc-347e-9ab8-414a7cda1aad}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="Opcode\Opcode.vcxproj">
+      <Project>{dbe44ca3-2912-4441-8d99-aa2242688ad2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
