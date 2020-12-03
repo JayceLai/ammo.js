@@ -6,6 +6,9 @@ ENDIF(BUILD_BULLET3)
 
 SUBDIRS(   BulletInverseDynamics BulletSoftBody BulletCollision BulletDynamics LinearMath Bullet3Common)
 
+IF(BUILD_MULTITHREADING)
+	SUBDIRS(MiniCL BulletMultiThreaded)
+ENDIF()
 
 IF(INSTALL_LIBS)
 	#INSTALL of other files requires CMake 2.6

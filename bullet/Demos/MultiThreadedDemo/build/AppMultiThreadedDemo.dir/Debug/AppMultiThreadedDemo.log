@@ -1,0 +1,3 @@
+﻿  MultiThreadedDemo.cpp
+d:\github\cocos\ammo.js\bullet\src\vectormath\sse\vec_aos.h(580): warning C4838: 从“unsigned int”转换到“const int”需要收缩转换
+LINK : fatal error LNK1104: 无法打开文件“BulletMultiThreaded_Debug.lib”

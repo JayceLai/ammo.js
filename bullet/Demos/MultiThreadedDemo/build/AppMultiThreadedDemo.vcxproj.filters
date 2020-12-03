@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Github\Cocos\ammo.js\bullet\Demos\MultiThreadedDemo\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Github\Cocos\ammo.js\bullet\Demos\MultiThreadedDemo\MultiThreadedDemo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Github\Cocos\ammo.js\bullet\Demos\MultiThreadedDemo\MultiThreadedDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Github\Cocos\ammo.js\bullet\Demos\MultiThreadedDemo\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F0FA50A1-0BFD-3F90-8C69-519A73B53BB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{87C4B3E6-8BBE-3C7F-9545-C7776FB09039}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{19067892-95CB-3FC3-8600-0C554C85DBBC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2} = {6C082AEB-9D83-30AE-818D-7C493B3A03B2}
+		{DB57175B-A364-32BB-998B-54FAFC587E11} = {DB57175B-A364-32BB-998B-54FAFC587E11}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppMultiThreadedDemo", "AppMultiThreadedDemo.vcxproj", "{6C082AEB-9D83-30AE-818D-7C493B3A03B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB57175B-A364-32BB-998B-54FAFC587E11} = {DB57175B-A364-32BB-998B-54FAFC587E11}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{DB57175B-A364-32BB-998B-54FAFC587E11}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLSupport", "..\..\..\build-win\Demos\OpenGL\OpenGLSupport.vcxproj", "{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		Release|Win32 = Release|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19067892-95CB-3FC3-8600-0C554C85DBBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19067892-95CB-3FC3-8600-0C554C85DBBC}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{19067892-95CB-3FC3-8600-0C554C85DBBC}.Release|Win32.ActiveCfg = Release|Win32
+		{19067892-95CB-3FC3-8600-0C554C85DBBC}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2}.Debug|Win32.Build.0 = Debug|Win32
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2}.Release|Win32.ActiveCfg = Release|Win32
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2}.Release|Win32.Build.0 = Release|Win32
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{6C082AEB-9D83-30AE-818D-7C493B3A03B2}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{DB57175B-A364-32BB-998B-54FAFC587E11}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB57175B-A364-32BB-998B-54FAFC587E11}.Debug|Win32.Build.0 = Debug|Win32
+		{DB57175B-A364-32BB-998B-54FAFC587E11}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{DB57175B-A364-32BB-998B-54FAFC587E11}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{DB57175B-A364-32BB-998B-54FAFC587E11}.Release|Win32.ActiveCfg = Release|Win32
+		{DB57175B-A364-32BB-998B-54FAFC587E11}.Release|Win32.Build.0 = Release|Win32
+		{DB57175B-A364-32BB-998B-54FAFC587E11}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{DB57175B-A364-32BB-998B-54FAFC587E11}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+		{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}.Debug|Win32.Build.0 = Debug|Win32
+		{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}.Release|Win32.ActiveCfg = Release|Win32
+		{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}.Release|Win32.Build.0 = Release|Win32
+		{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{68DA1869-8975-3746-88B5-B1F0BAF9CDDA}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3DE50DD-7431-3B96-9E57-5F537945A283}
+	EndGlobalSection
+EndGlobal
